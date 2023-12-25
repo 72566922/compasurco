@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/compras.css">    
+    <link rel="stylesheet" href="../static/css/Nav.css">    
+    <link rel="stylesheet" href="../static/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
+
+    <title>Compras</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="icon icon-menu"></label>
+
+        <a href="/templates/Nav.html" class="logo">Express <span>.</span>   
+        </a>
+        <nav class="navbar">
+            <ul class="menu-horizontal">
+
+                <li><a href="Nav.html">home</a></li>
+                <li><a href="Tipos_mochilas.html">catálogos</a></li>  
+                
+                <li><a href="ofertas.html">Ofertas</a></li>
+                
+                <li><a href="atencion.html">Contacto</a></li>
+            </ul>   
+        </nav>
+
+        <div class="icons">
+            <a href="login.html"class="fa-solid fa-user"></a>
+            <a href="compras.html"class="fa-solid fa-cart-shopping"></a>
+        </div>  
+    </header>   
+
+<div class="bloquegeneral">
+    <div class="contenedoritem">
+        <div class="mochila">
+        <img src="imagenes/mochila 2 ori.png" alt="" width="100%">
+    </div>
+    <div class="caracteris">
+        <h3>Mochila Porta </h3>
+        <h4>Porta Cuper Style</h4>
+        <div class="imgcarac">
+            <img src="imagenes/estrella.png" alt="">
+            <img src="imagenes/estrella.png" alt="">
+            <img src="imagenes/estrella.png" alt="">
+            <img src="imagenes/estrella.png" alt="">
+            <img src="imagenes/estrella.png" alt="">
+        </div>
+        <p class="separa">Vendido por Lima Express</p>
+        <div class="colgene">
+            <p>Color:</p>
+            <div class="colores">
+                <div class="color"></div>
+                <div class="color1"></div>
+                <div class="color2"></div>
+            </div>
+        </div>
+        <div class="talla">
+            <a href="#">Talla Unica</a>
+        </div>
+
+        <div class="despacho">
+            <img src="imagenes/carrito.png" alt="">
+            <div class="letras">
+                <h3>Despacho a domicilio</h3>
+                <a href="#">Revisar disponibilidad ></a>
+            </div>
+        </div>
+        <div class="tienda">
+            <img src="imagenes/tienda.png" alt="">
+            <div class="letras">
+                <h3>Retiro en tienda</h3>
+                <a href="#">Selecciona una tienda ></a>
+            </div>
+        </div>
+    </div>
+    <div class="contedcom">
+        <div class="compra">
+            <a href="#" class="envio">Envios gratis</a>
+            <h3 id="precio">S/30.00</h3>
+            <div class="suma">
+                <span class="minus" onclick="cambiarCantidad(-1)">-</span>
+                <span class="num" id="cantidad">1</span>
+                <span class="plus" onclick="cambiarCantidad(1)">+</span>
+            </div>
+           
+            <a href="almacenar.html" class="carri" onclick="agregarAlCarrito('Mochila Porta', 30.00)">Agregar al carro</a>
+            <div class="tarjeta">
+                <a href="#" alt="" width="100%"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="otro">
+    <div class="titu">
+        <h3> Otros productos:</h3>
+    </div>
+    <div class="conte">
+        <div class="item"> 
+            <img src="imagenes/mochila3.jpg" alt="" width="100%">
+            <h3>PORTA</h3>
+            <p>Mochila estudiantil modelo casual con 4 bolsillos</p>
+            <div class="botompro">
+                <a href="catalogo.html">Ver producto</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="imagenes/mochila4.jpg" alt=""width="100%">
+            <h3>PORTA</h3>
+            <p>Mochila estudiantil modelo retro con 4 bolsillos</p>
+            <div class="botompro">
+                <a href="catalogo.html">Ver producto</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="imagenes/maleta1.jpg" alt=""width="100%">
+            <h3>PORTA</h3>
+            <p>Maleta de viaje modelo casual con 3 bolsillos</p>
+            <div class="botompro">
+                <a href="catalogo.html">Ver producto</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="imagenes/maleta2.jpg" alt=""width="100%">
+            <h3>PORTA</h3>
+            <p>Maleta de viaje modelo casual con 3 bolsillos</p>
+            <div class="botompro">
+                <a href="catalogo.html">Ver producto</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="imagenes/maleta3.jpg" alt=""width="100%">
+            <h3>PORTA</h3>
+            <p>Maleta de viaje modelo marvel con 3 bolsillos</p>
+            <div class="botompro">
+                <a href="catalogo.html">Ver producto</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="carrito.js"></script>
+</body>
+</html>

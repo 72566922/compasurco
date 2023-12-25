@@ -1,0 +1,16 @@
+
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: templates/Nav.html
+  upload: templates/Nav.html
+
+- url: /(.*)
+  static_files: limav3/\1
+  upload: limav3/(.*) 
+
+- url: /static/css
+  static_dir: css

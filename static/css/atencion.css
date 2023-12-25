@@ -1,0 +1,77 @@
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .formulario, .servicio-cliente {
+    width: 45%;
+    height: 70%;
+    margin: 0 100px; 
+  }
+  
+  .formulario {
+    background-color: rgba(249, 249, 249, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .formulario h2 {
+    color: #d87d27;
+    font-size: 1.5em;
+  }
+  
+  .formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .formulario input, .formulario textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+
+  }
+  
+  .formulario input[type="submit"] {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #5215fc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .formulario input[type="submit"]:hover {
+    background-color: #d87d27;
+  }
+  
+  .servicio-cliente {
+    background-color: rgba(224, 224, 224, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2.0em;
+  }
+  
+  .servicio-cliente h2 {
+    color: #d87d27;
+  }
+
+  .servicio-cliente .titulo-duda {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .servicio-cliente p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  body {
+   background-color: rgb(1, 0, 50);
+    background-size: cover;
+  }

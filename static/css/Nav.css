@@ -1,0 +1,476 @@
+
+:root{
+    /*outline: 4px solid red;*/
+    --pink:#5215fc;
+    --plomo: #5215fc;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*establece como se calcula el ancho y alto total de un elemento, hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    /*outline: 2px solid rgb(255, 0, 144);*/
+}
+
+html{
+    /*outline: 1px solid blue;*/
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    
+}
+
+section{ /*padding en header y section es igual*/
+    padding: 2rem 0%;
+    
+}
+
+
+
+.heading span{
+    color: white;
+}
+
+
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: violet;
+    color: #fff;
+    padding: 0.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background:#7f00b2;
+}
+
+header{
+    position: fixed; /*fijar el header para que cuando la página baje más se quede ahí*/
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%; /*2 rem de arriba y abajo, 9% a los costados*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0, .1);
+    
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    /*outline: 2px solid red;*/
+}
+
+
+.menu-horizontal{
+    /*outline: 2px solid black;*/
+    display: flex;
+    list-style: none;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+
+
+/*hover de menú*/
+header .navbar a:hover{
+    color: #296ff9;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+/*hover de iconos*/
+header .icons a:hover{
+    color: #296ff9;
+
+}
+
+header #toggler{
+    display: none;
+}
+
+header .icon-menu{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0,0,0 0.3);
+    display: none;
+}
+
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons{
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.img-us{
+    outline: 1px solid green;
+    height: 5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+:root {
+    --max-width: 1280px;
+    --min-width: 320px;
+    --accent-color: #000131;
+  }
+  
+  * {
+    box-sizing: border-box;
+    
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+    color: rgb(245, 237, 237);
+    font-family: Roboto, sans-serif;
+    
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .book-appointment {
+    background-color: var(--accent-color);
+    padding: 1rem 2rem;
+    font-size: 24px;
+  }
+  
+  .content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    min-width: var(--min-width);
+    background-image: url(imgpri/Las\ aventuras\ mochileras\ de\ Blanca.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+ 
+  .footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: var(--max-width);
+    
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .logo__img {
+    margin-right: 0.5rem;
+  }
+  
+  .menu-list {
+    margin: 0;
+  }
+  
+  .menu-list__item {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 24px;
+  }
+  
+  .menu-list__item:last-child {
+    margin-right: 0;
+  }
+  
+  .content {
+    flex-grow: 0;
+    padding: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .slideButton {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+  }
+  
+  .prevSlide {
+    left: 3rem;
+  }
+  
+  .nextSlide {
+    right: 3rem;
+  }
+  
+  .content__claim {
+    font-size: 64px;
+    color: var(--accent-color);
+    margin: 0;
+  }
+  
+  .content__subclaim {
+    font-size: 36px;
+    margin: 0.5rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-wrapper {
+    background-color: rgb(1, 0, 54);
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 5vh;
+    text-align: center; /* Alinea el texto al centro horizontalmente dentro de .footer */
+  }
+  
+  .footer__widget {
+    font-size: 24px;
+    margin: 20px; /* Agrega espacio entre los elementos .footer__widget */
+  }
+  
+  .footer__widget__title {
+    color: aliceblue;
+    margin: 0 0 1rem 0;
+  }
+  
+  .footer__widget__text {
+    margin: 0;
+  }
+  
+  
+
+
+
+
+/*FINALIZA LA SECCIÓN FOOTER*/
+
+
+
+/*media queries*/
+@media (max-width:991px){
+    html{ 
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+        
+        
+    }
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+    
+    .menu-horizontal{
+        display: flex;
+    }
+
+    .menu-horizontal{
+        display: flex;
+        flex-direction: column;
+
+     }
+    }
+
+    
+   
+
+@media (max-width:768px){
+    header .icon-menu{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left:0; right:0;
+        background: #eee;
+        border-top: 0.1rem solid rgba(0,0, 0, 1); 
+        clip-path: polygon(0 0, 100% 0, 0 0);
+        
+    }
+
+
+    header #toggler:checked~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding:1.5rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0,0, 0, 0.1);
+        display: block;
+        
+    }
+
+    .home .content .h3{
+        font-size: 5rem;
+    }
+
+    .home .content .span{
+        font-size: 2.5rem;
+
+    }
+    .icons-container .icons h3{
+        
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        
+        font-size: 1.7rem;
+    }
+
+    .home{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .imgaudifonos img{
+        width: 100%;
+    }
+
+    .imgaudifonos{
+        margin-left: -41rem;
+        margin-top: 5rem;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    }
+
+
+
+
+
+
+
+    @media (max-width:450px){
+        html{
+            
+            font-size: 50%;
+        }
+        .heading{
+            font-size: 3rem;
+        }
+
+        
+    }
+    @media screen and (max-width: 1280px) 
+    {
+        .header,
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+        .menu {
+          margin-top: 1.5rem;
+        }
+      
+        .content {
+          align-items: center;
+        }
+      
+        .footer__widget {
+          margin-bottom: 1rem;
+        }
+      }
